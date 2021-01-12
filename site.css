@@ -3,5 +3,23 @@
 }
 
 h1 {
-/*  color: #060666;*/
+  color: #060666;
+}
+
+@media print {}
+
+@media screen and (min-width: 768px) {}
+
+.columns {
+  border: solid 1px #ccc;
+  display: flex;
+}
+
+.columns>div {
+  border: solid 1px #ddd;
+  flex: 1;
+}
+
+.columns>div:nth-of-type(2) {
+  flex: 2;
 }
